@@ -7,7 +7,7 @@ import os
 WEBHOOK_URL = os.getenv('WEBHOOK_URL')
 CHANNEL_ID = 'UCGxzWLH1_1ABKKfSiy2WIAw'
 RSS_URL = f'https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}'
-LAST_ID_FILE = 'last_video_id.txt' # File to store the previous video ID
+LAST_ID_FILE = os.getenv('LAST_ID_FILE', 'last_video_id.txt') # File to store the previous video ID
 
 def main():
     # Fetch RSS feed

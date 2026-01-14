@@ -11,3 +11,4 @@ wheels/
 
 .direnv
 .env
+last_video_id.txt

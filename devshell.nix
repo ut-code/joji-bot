@@ -2,7 +2,7 @@
 pkgs.mkShell {
   # Add build dependencies
   packages = with pkgs; [
-    uv
+    bun
   ];
 
   # Add environment variables
